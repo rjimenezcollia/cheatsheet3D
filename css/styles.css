@@ -489,31 +489,31 @@ body {
 }
 
 .primaryShortcut {
-    background-image: url("./images/cardicons/primaryShortcut.png");
+    background-image: url("images/cardicons/primaryShortcut.png");
 }
 
 .secondaryShortcut {
-    background-image: url("./images/cardicons/secondaryShortcut.png");
+    background-image: url("images/cardicons/secondaryShortcut.png");
 }
 
 .modelingToolkit {
-    background-image: url("./images/cardicons/modelingToolkit.png");
+    background-image: url("images/cardicons/modelingToolkit.png");
 }
 
 .polyModeling {
-    background-image: url("./images/cardicons/polyModeling.png");
+    background-image: url("images/cardicons/polyModeling.png");
 }
 
 .gizmos {
-    background-image: url("./images/cardicons/gizmos.png");
+    background-image: url("images/cardicons/gizmos.png");
 }
 
 .render {
-    background-image: url("./images/cardicons/render.png");
+    background-image: url("images/cardicons/render.png");
 }
 
 .misc {
-    background-image: url("./images/cardicons/misc.png");
+    background-image: url("images/cardicons/misc.png");
 }
 
 
