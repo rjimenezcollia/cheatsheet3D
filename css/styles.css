@@ -1788,3 +1788,66 @@ h3,
 
     text-transform: uppercase;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .site-header {
+        border: 1px solid var(--border);
+        border-radius: 0 0 18px 18px;
+    }
+
+    .site-header-inner {
+        padding: 10px;
+    }
+
+
+    .site-brand {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .site-brand h1 {
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+    }
+
+    .shortcut-sidebar {
+        width: 100%;
+        top: 6vh;
+        bottom: auto;
+        height: 24vh;
+        z-index: 5;
+        left: 0;
+    }
+
+    .search-section {
+        margin: -20px 0 0 -20px;
+    }
+
+    .content {
+        width: 100%;
+        top: 31vh;
+        position: fixed;
+        height: 69vh;
+        border-radius: 18px 18px 0 0;
+    }
+
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card img {
+        height: 50vh;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .key small {
+        font-size: 7px;
+    }
+}
