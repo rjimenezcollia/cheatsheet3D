@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TUMO - Modelado 3D</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="site-header-inner">
+
+            <div class="site-brand">
+
+                <img src="images/tumo_logo.png" alt="Logo Modelado 3D" class="site-logo">
+
+                <h1>Modelado 3D</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="shortcut-sidebar">
+
+        <!-- BUSCADOR -->
+        <section class="search-section" id="search-container">
+            <input type="text" id="search" placeholder="Buscar atajo o herramienta..." autocomplete="off">
+        </section>
+
+        <!-- ATAJOS PRINCIPALES  -->
+        <section class="shortcut-section" id="primary-shortcuts-section">
+            <h2><span class="cardIcon primaryShortcut"></span> Atajos principales</h2>
+            <p class="section-description">Atajos de uso frecuente en MAYA.</p>
+            <div id="shortcut-list" class="shortcut-grid"></div>
+        </section>
+
+        <!-- ATAJOS SECUNDARIOS  -->
+        <section class="shortcut-section" id="secondary-shortcuts-section">
+            <h2><span class="cardIcon secondaryShortcut"></span> Atajos secundarios</h2>
+            <p class="section-description">Atajos adicionales globales.</p>
+            <div id="secondary-shortcut-list" class="shortcut-grid"></div>
+        </section>
+
+        <!-- MODELING TOOLKIT  -->
+        <section class="shortcut-section" id="modeling-toolkit-section">
+            <h2><span class="cardIcon modelingToolkit"></span> Modeling Toolkit</h2>
+            <p class="section-description">Herramientas de modelado y selección de componentes.</p>
+            <div id="modeling-toolkit-list" class="shortcut-grid"></div>
+        </section>
+
+        <!-- =================================================
+     POLY MODELING
+     ================================================= -->
+
+        <section class="shortcut-section" id="poly-modeling-section">
+
+            <h2><span class="cardIcon polyModeling"></span> Poly Modeling</h2>
+
+            <p class="section-description">
+                Creación de las principales primitivas y sus herramientas.
+            </p>
+
+            <div id="poly-modeling-list" class="shortcut-grid"></div>
+
+        </section>
+
+        <!-- =================================================
+     GIZMOS
+     ================================================= -->
+
+        <section class="shortcut-section" id="gizmos-section">
+
+            <h2><span class="cardIcon gizmos"></span> Gizmos</h2>
+
+            <p class="section-description">
+                Herramientas de transformación.
+            </p>
+
+            <div id="gizmos-list" class="shortcut-grid"></div>
+
+        </section>
+
+        <!-- =================================================
+     RENDERING
+     ================================================= -->
+
+        <section class="shortcut-section" id="rendering-section">
+
+            <h2><span class="cardIcon render"></span> Render</h2>
+
+            <p class="section-description">
+                Herramientas para el renderizado.
+            </p>
+
+            <div id="render-list" class="shortcut-grid"></div>
+
+        </section>
+
+        <!-- =================================================
+     MISC
+     ================================================= -->
+
+        <section class="shortcut-section" id="misc-section">
+
+            <h2><span class="cardIcon misc"></span> Miscelanea</h2>
+
+            <p class="section-description">
+                Otras herramientas de la interfaz de Maya.
+            </p>
+
+            <div id="misc-list" class="shortcut-grid"></div>
+
+        </section>
+
+
+    </aside>
+
+
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
+
+    <main class="content">
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+             ================================================= -->
+
+        <div class="main-content">
+
+
+            <!-- =================================================
+                 MAGIC KEYBOARD AND MOUSE
+                 ================================================= -->
+
+            <section class="card" id="keyboard-section">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon primaryShortcut"></span> ATAJOS DE TECLADOs</h2>
+                    <p class="section-description">Selecciona un atajo para resaltar las teclas correspondientes.</p>
+                </div>
+
+
+
+                <div class="keyboard">
+
+                    <!-- =================================================
+                         FUNCTION ROW
+                         ================================================= -->
+
+                    <div class="keyboard-row function-row">
+
+                        <div class="key fn-key" data-key="ESC">
+                            esc
+                        </div>
+
+                        <div class="key fn-key" data-key="F1">
+                            <span>☀</span>
+                            <small>F1</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F2">
+                            <span>☀</span>
+                            <small>F2</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F3">
+                            <span>▦</span>
+                            <small>F3</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F4">
+                            <span>⌕</span>
+                            <small>F4</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F5">
+                            <span>🎙</span>
+                            <small>F5</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F6">
+                            <span>☾</span>
+                            <small>F6</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F7">
+                            <span>◀</span>
+                            <small>F7</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F8">
+                            <span>▶</span>
+                            <small>F8</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F9">
+                            <span>◀▶</span>
+                            <small>F9</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F10">
+                            <span>🔉</span>
+                            <small>F10</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F11">
+                            <span>🔊</span>
+                            <small>F11</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="F12">
+                            <span>🔊</span>
+                            <small>F12</small>
+                        </div>
+
+                        <div class="key fn-key" data-key="LOCK">
+                            🔒
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         NUMBER ROW
+                         ================================================= -->
+
+                    <div class="keyboard-row number-row">
+
+                        <div class="key" data-key="DEGREE">
+                            <span>º</span>
+                            <small>ª</small>
+                        </div>
+
+                        <div class="key" data-key="1">
+                            <span>1</span>
+                            <small>!</small>
+                        </div>
+
+                        <div class="key" data-key="2">
+                            <span>2</span>
+                            <small>"</small>
+                        </div>
+
+                        <div class="key" data-key="3">
+                            <span>3</span>
+                            <small>#</small>
+                        </div>
+
+                        <div class="key" data-key="4">
+                            <span>4</span>
+                            <small>$</small>
+                        </div>
+
+                        <div class="key" data-key="5">
+                            <span>5</span>
+                            <small>%</small>
+                        </div>
+
+                        <div class="key" data-key="6">
+                            <span>6</span>
+                            <small>&</small>
+                        </div>
+
+                        <div class="key" data-key="7">
+                            <span>7</span>
+                            <small>/</small>
+                        </div>
+
+                        <div class="key" data-key="8">
+                            <span>8</span>
+                            <small>(</small>
+                        </div>
+
+                        <div class="key" data-key="9">
+                            <span>9</span>
+                            <small>)</small>
+                        </div>
+
+                        <div class="key" data-key="0">
+                            <span>0</span>
+                            <small>=</small>
+                        </div>
+
+                        <div class="key" data-key="APOSTROPHE">
+                            <span>'</span>
+                            <small>?</small>
+                        </div>
+
+                        <div class="key" data-key="INVERTED">
+                            <span>¡</span>
+                            <small>¿</small>
+                        </div>
+
+                        <div class="key delete-key" data-key="DELETE">
+                            ⌫
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         QWERTY
+                         ================================================= -->
+
+                    <div class="keyboard-row qwerty-row">
+
+                        <div class="key tab-key" data-key="TAB">
+                            ⇥
+                        </div>
+
+                        <div class="key" data-key="Q">Q</div>
+                        <div class="key" data-key="W">W</div>
+                        <div class="key" data-key="E">E</div>
+                        <div class="key" data-key="R">R</div>
+                        <div class="key" data-key="T">T</div>
+                        <div class="key" data-key="Y">Y</div>
+                        <div class="key" data-key="U">U</div>
+                        <div class="key" data-key="I">I</div>
+                        <div class="key" data-key="O">O</div>
+                        <div class="key" data-key="P">P</div>
+
+                        <div class="key" data-key="ACCENT">
+                            <span>^</span>
+                            <small>`</small>
+                        </div>
+
+                        <div class="key" data-key="PLUS">
+                            <span>*</span>
+                            <small>+</small>
+                        </div>
+
+                        <div class="key enter-key" data-key="RETURN">
+                            ↩
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ASDF
+                         ================================================= -->
+
+                    <div class="keyboard-row asdf-row">
+
+                        <div class="key caps-key" data-key="CAPS">
+                            ⇪
+                        </div>
+
+                        <div class="key" data-key="A">A</div>
+                        <div class="key" data-key="S">S</div>
+                        <div class="key" data-key="D">D</div>
+                        <div class="key" data-key="F">F</div>
+                        <div class="key" data-key="G">G</div>
+                        <div class="key" data-key="H">H</div>
+                        <div class="key" data-key="J">J</div>
+                        <div class="key" data-key="K">K</div>
+                        <div class="key" data-key="L">L</div>
+
+                        <div class="key" data-key="N">Ñ</div>
+
+                        <div class="key" data-key="DIAERESIS">
+                            <span>´</span>
+                            <small>¨</small>
+                        </div>
+
+                        <div class="key" data-key="CEDILLA">
+                            Ç
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         SHIFT
+                         ================================================= -->
+
+                    <div class="keyboard-row shift-row">
+
+                        <div class="key shift-left" data-key="SHIFT">
+                            ⇧
+                        </div>
+
+                        <div class="key angle-key" data-key="ANGLE">
+                            <span>&lt;</span>
+                            <small>&gt;</small>
+                        </div>
+
+                        <div class="key" data-key="Z">Z</div>
+                        <div class="key" data-key="X">X</div>
+                        <div class="key" data-key="C">C</div>
+                        <div class="key" data-key="V">V</div>
+                        <div class="key" data-key="B">B</div>
+                        <div class="key" data-key="N">N</div>
+                        <div class="key" data-key="M">M</div>
+
+                        <div class="key" data-key="COMMA">
+                            <span>,</span>
+                            <small>;</small>
+                        </div>
+
+                        <div class="key" data-key="PERIOD">
+                            <span>.</span>
+                            <small>:</small>
+                        </div>
+
+                        <div class="key" data-key="MINUS">
+                            <span>-</span>
+                            <small>_</small>
+                        </div>
+
+                        <div class="key shift-right" data-key="SHIFT2">
+                            ⇧
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         BOTTOM
+                         ================================================= -->
+
+                    <div class="keyboard-row bottom-row">
+
+                        <div class="key fn-bottom" data-key="FN">
+                            <span>🌐</span>
+                            <small>fn</small>
+                        </div>
+
+                        <div class="key control-key" data-key="CONTROL">
+                            <span>⌃</span>
+                            <small>control</small>
+                        </div>
+
+                        <div class="key option-key" data-key="OPTION">
+                            <span>⌥</span>
+                            <small>option</small>
+                        </div>
+
+                        <div class="key command-key" data-key="CMD">
+                            <span>⌘</span>
+                            <small>command</small>
+                        </div>
+
+                        <div class="key space-key" data-key="SPACE"></div>
+
+                        <div class="key command-key" data-key="CMD2">
+                            <span>⌘</span>
+                            <small>command</small>
+                        </div>
+
+                        <div class="key option-key" data-key="OPTION2">
+                            <span>⌥</span>
+                            <small>option</small>
+                        </div>
+
+                        <div class="arrow-cluster">
+
+                            <div class="key arrow left" data-key="LEFT">
+                                ←
+                            </div>
+
+                            <div class="key arrow up" data-key="UP">
+                                ↑
+                            </div>
+
+                            <div class="key arrow down" data-key="DOWN">
+                                ↓
+                            </div>
+
+                            <div class="key arrow right" data-key="RIGHT">
+                                →
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     MAGIC MOUSE
+                     ================================================= -->
+
+                <div class="mouse-wrapper">
+
+                    <div class="mouse">
+                        <div class="mouse-button mouse-left" data-mouse="LEFT"></div>
+                        <div class="mouse-button mouse-right" data-mouse="RIGHT"></div>
+                        <div class="mouse-wheel" data-mouse="MIDDLE">
+                            <div class="wheel-lines"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =================================================
+                 MODELING TOOLKIT
+                 ================================================= -->
+
+            <section class="card" id="modeling-toolkit">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon modelingToolkit"></span> MODELING TOOLKIT</h2>
+                    <p class="section-description">Herramientas de modelado y selección de componentes.</p>
+                </div>
+
+                <h3>Selección de componentes</h3>
+                <p class="section-description">
+                    Los modos de selección objeto, vértice, arista y cara
+                    son fundamentales para un correcto modelado.
+                </p>
+
+                <div id="modeling-toolkit-components-option" class="tool-grid"></div>
+
+
+                <h3>Herramientas de modelado</h3>
+                <p class="section-description">
+                    Nos permiten llegar a la forma que necesitamos de una forma mas eficaz.
+                </p>
+
+                <div id="modeling-toolkit-tools-option" class="tool-grid"></div>
+
+            </section>
+
+            <!-- =================================================
+                 POLY MODELING
+                 ================================================= -->
+
+            <section class="card" id="poly-modeling">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon polyModeling"></span> POLY MODELING</h2>
+                    <p class="section-description">Creación de las principales primitivas y sus herramientas.</p>
+                </div>
+
+                <div id="poly-modeling-option" class="tool-grid"></div>
+
+            </section>
+
+
+            <!-- =================================================
+                 GIZMOS
+                 ================================================= -->
+
+            <section class="card" id="gizmos-section">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon gizmos"></span> GIZMOS</h2>
+                    <p class="section-description">Herramientas de transformación.</p>
+                </div>
+
+                <div id="gizmos-option" class="tool-grid"></div>
+
+            </section>
+
+
+
+
+            <!-- =================================================
+                 RENDERING
+                 ================================================= -->
+
+            <section class="card" id="rendering">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon render"></span> RENDER</h2>
+                    <p class="section-description">Herramientas para el renderizado.</p>
+                </div>
+
+                <div id="render-option" class="tool-grid"></div>
+
+            </section>
+
+            <!-- =================================================
+                 MISCELLANEOUS
+                 ================================================= -->
+
+            <section class="card" id="misc">
+
+                <div class="section-header">
+                    <h2><span class="cardIcon misc"></span> MISCELANEA</h2>
+                    <p class="section-description">Otras herramientas de la interfaz de Maya.</p>
+                </div>
+
+                <div id="misc-option" class="tool-grid"></div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
