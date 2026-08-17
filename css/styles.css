@@ -1885,6 +1885,7 @@ h3,
         --gap: 2px;
         --key-height: 20px;
         padding: 15px 10px;
+        margin-top: 0;
     }
 
     .key {
@@ -1957,6 +1958,18 @@ h3,
     .mouse {
         width: 85px;
         height: 120px;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .section-description {
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 14px;
     }
 
 
