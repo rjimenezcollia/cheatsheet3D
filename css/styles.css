@@ -1817,7 +1817,7 @@ h3,
 
     .shortcut-sidebar {
         width: 100%;
-        top: 6vh;
+        top: 8vh;
         bottom: auto;
         height: 24vh;
         z-index: 5;
@@ -1830,9 +1830,9 @@ h3,
 
     .content {
         width: 100%;
-        top: 31vh;
+        top: 33vh;
         position: fixed;
-        height: 69vh;
+        height: 62vh;
         border-radius: 18px 18px 0 0;
     }
 
