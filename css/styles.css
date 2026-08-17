@@ -1841,10 +1841,14 @@ h3,
     }
 
     .tool-card img {
-        height: 50vh;
+        /* height: 50vh;
         width: auto;
         max-width: 100%;
-        object-fit: cover;
+        object-fit: cover; */
+        width: auto;
+        max-width: 100%;
+        max-height: 55vh;
+        border: solid 1px red;
     }
 
     .keyboard {
